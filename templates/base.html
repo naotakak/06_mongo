@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Movies</title>
+  </head>
+
+  <body>
+    <h3>Movie database by Jasper Cheung and Naotaka Kinoshita</h3>
+    This site uses the American movie database to search by title, date of creation, director, and genre. In order to search by a particular method, input the desired text/number into the correct field and press the corresponding button. Note that you must include proper capitalizition (i.e. for director, only "Quentin Tarantino" would work, not "quentin tarantino".)<br><br>
+    <form action="/title" method="GET">
+      Enter title: <input type="text" name="input">
+      <input type="submit" value="Search">
+    </form><br>
+    <form action="/after_year" method="GET">
+      Search by movies made after year: <input type="text" name="input">
+      <input type="submit" value="Search">
+    </form><br>
+    <form action="/director" method="GET">
+      Search by director: <input type="text" name="input">
+      <input type="submit" value="Search">
+    </form><br>
+    <form action="/year" method="GET">
+      Search by year: <input type="text" name="input">
+      <input type="submit" value="Search">
+    </form><br>
+    <form action="/before_year" method="GET">
+      Search by movies made before year: <input type="text" name="input">
+      <input type="submit" value="Search">
+    </form><br>
+    
+    <form action="/genreyear" method="GET">
+      Enter genre: <input type="text" name="genre"><br>
+      Enter year: <input type="text" name="year"><br>
+      <input type="submit" value="submit">
+    </form>
+  </body>
+
+</html>
